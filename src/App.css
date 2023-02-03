@@ -59,6 +59,7 @@ p
 {
   display: flex;
   flex-direction: column;
+  gap:20px;
 }
 #count
 {
@@ -69,6 +70,6 @@ p
 }
 .App
 {
-  width: 475px;
+ 
   padding: 20px;
 }

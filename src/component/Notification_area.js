@@ -1,3 +1,6 @@
+
+
+
 function Noti(propes)
 {
     return(
@@ -11,8 +14,9 @@ function Noti(propes)
                     <p className="comment">
                         {propes.comment}
                     </p>
+                    
                 </div>
-                <img src={propes.img_2} alt={propes.img_alt_2} />
+                <img src={propes.img_2} alt={propes.img_alt_2}/>
             </div>
         </div>
     );
