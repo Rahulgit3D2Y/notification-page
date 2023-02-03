@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+:root
+{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--VeryLightGrayishBlue: hsl(210, 60%, 98%);
+--LightGrayishBlue1: hsl(211, 68%, 94%);
+--LightGrayishBlue2: hsl(205, 33%, 90%);
+--GrayishBlue: hsl(219, 14%, 63%);
+--DarkGrayishBlue: hsl(219, 12%, 42%);
+--VeryDarkBlue: hsl(224, 21%, 14%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*
+{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body
+{
+  display: grid;
+  place-content: center;
+}
+.header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+p
+{
+  color:var(--DarkGrayishBlue) ;
+  font-size: 16px;
+}
+.notifi
+{
+  display: flex;
+}
+.container
+{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.not
+{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--LightGrayishBlue1);
+  border-radius: 1rem;
+  padding: 10px;
+  gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.text
+{
+  display: flex;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#count
+{
+  color: var(--White);
+  background-color: var(--Blue);
+  padding:0 15px;
+  border-radius: 8px;
+}
+.App
+{
+  width: 475px;
+  padding: 20px;
 }
