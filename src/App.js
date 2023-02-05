@@ -32,7 +32,7 @@ const my_notification=[
     text:'has joined your group',
     imp:'Chess Club',
     time:'1 day ago',
-    comment:"",
+    comment:'',
     img_2:'',
     img_alt_2:'',
   },
@@ -80,11 +80,26 @@ const my_notification=[
   },
  
 ]
+
 function App() {
+  
+  function comment()
+  {
+      let a=document.querySelectorAll('#comment')
+      for(let i=0;i<a.length;i++)
+      if(!a[i].innerHTML)
+      a[i].style.padding=0;
+  }
+  function read()
+  {
+    let p=document.querySelectorAll('#not')
+        for(let i=3;i<p.length;i++)
+        p[i].style.backgroundColor='white';
+  }
   return (
-    <div className="App">
+    <div className="App"onLoad={comment}>
       <Head/>
-      <div className="container">
+      <div className="container" onLoad={read}>
       {
       my_notification.map((item)=>{
         return <Noti name={item.name} img={item.img} img_2={item.img_2} text={item.text} imp={item.imp} time={item.time} comment={item.comment} img_alt={item.img_alt} img_alt_2={item.img_alt_2}/>

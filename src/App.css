@@ -25,11 +25,18 @@ body
   display: grid;
   place-content: center;
 }
+.App
+{width: 450px;}
 .header
 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header p:hover
+{
+  cursor: pointer;
+  color: var(--Blue);
 }
 p
 {
@@ -72,4 +79,24 @@ p
 {
  
   padding: 20px;
+}
+.comment
+{
+  
+  background-color: var(--GrayishBlue);
+  border-radius: 5px;
+  padding:20px;
+}
+span:hover {
+  font-weight: normal;
+  color: var(--Blue);
+}
+.name
+{
+  color: black;
+  font-weight: bolder;
+}
+@media (width>700px) {
+ .App
+ {width: 700px;} 
 }
